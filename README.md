@@ -1,2 +1,3 @@
 # trybe-exercicios
-repositório para salvar os exercícios da Trybe 
+repositório para salvar os exercícios da Trybe
+
