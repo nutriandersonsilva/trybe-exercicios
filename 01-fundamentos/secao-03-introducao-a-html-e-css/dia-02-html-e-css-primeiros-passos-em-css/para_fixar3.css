@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <style>
+       /*  */
+       h1 {text-align: right;
+            font-family: sans-serif;}
+        p { 
+            text-decoration: line-through;
+            font-style:italic;
+            font-weight: 600;
+            font-size: 3em;
+        }
+        body{
+            font-size: 16px;
+           
+        }
+        #l1{background-color: aqua;}
+        #l2{background-color: bisque;}
+        #l3{background-color: brown;}
