@@ -1,0 +1,62 @@
+div:hover{
+    border: 3px;
+    color: blue;
+}
+
+
+div:nth-of-type(1) {
+    background-color: #606C38;
+  }
+  
+
+  div:nth-of-type(2) {
+    background-color: #283618;
+  }
+  
+
+  div:nth-of-type(3) {
+    background-color: #FEFAE0;
+  }
+  
+
+  div:nth-of-type(4) {
+    background-color: #DDA15E;
+  }
+  
+
+  div:nth-of-type(5) {
+    background-color: #BC6C25;
+  }
+
+
+  div:nth-of-type(1) > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  div:nth-of-type(2) > h3 {
+    text-align: center;
+  }
+  
+  div:nth-of-type(3) > h3 {
+    color: darkred;
+  }
+  
+  div:nth-of-type(4) > h3 {
+    color: aqua;
+  }
+  
+  div:nth-of-type(5) > h3 {
+    text-align:right;
+  }
+
+  div:nth-of-type(3){
+    font-size: 50px;
+  }
+
+
+  div:nth-child(odd){
+    font-style: italic;
+  }
+  
+
