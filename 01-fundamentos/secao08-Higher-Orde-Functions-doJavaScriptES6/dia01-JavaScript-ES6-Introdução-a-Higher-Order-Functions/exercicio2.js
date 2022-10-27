@@ -28,7 +28,7 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const dragonattk = dragon => {
+const dragonAttk = dragon => {
     const danoMin = 15
     const danoMax = Math.floor(Math.random() * strength);
 
@@ -37,7 +37,7 @@ const dragonattk = dragon => {
     return dragonDano;
 }
 
-const warriorattak = warrior => {
+const warriorAttk = warrior => {
     const danoMin = warrior.strength
     const danoMax = Math.floor(Math.random() * (danoMin * warrior.weaponDmg));
 
@@ -46,7 +46,7 @@ const warriorattak = warrior => {
     return warriorDano;
 }
 
-const mageattk = mage => {
+const mageAttk = mage => {
     const mana = mage.mana;
     const danoMin = mage.intelligence
     const danoMax = danoMin * 2
@@ -63,3 +63,24 @@ const mageattk = mage => {
     }
     return manaTurno;
 }
+
+
+/* Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe - as como parâmetro para outras funções que irão compor um objeto gameActions.O objeto será composto por ações do jogo e cada ação é por definição uma HOF, pois, neste caso, são funções que recebem como parâmetro outra função. */
+
+
+/* Crie a primeira HOF que compõe o objeto gameActions.
+Ela será a função que simula o turno do personagem warrior.Essa HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon.Além disso, ela também deve atualizar o valor da chave damage do warrior.
+
+Crie a segunda HOF que compõe o objeto gameActions.
+Ela será a função que simula o turno do personagem mage.Essa HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon.Além disso, ela também deve atualizar o valor das chaves damagee mana do mage.
+
+Crie a terceira HOF que compõe o objeto gameActions.
+Ela será a função que simula o turno do monstro dragon.Essa HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens mage e warrior.Além disso, ela também deve atualizar o valor da chave damage do monstro.
+
+Adicione ao objeto gameActions uma função de primeira classe que retorna o objeto battleMembers atualizado e faça um console.log para visualizar o resultado final do turno.
+    Solução:
+
+Parte I
+
+Crie uma função que retorna o dano do dragão. */
+
